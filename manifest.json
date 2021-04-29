@@ -1,31 +1,28 @@
 {
-    "name": "Destinare Lite",
-    "description": "An extension that gives you a plethora of things to do for a specified destination!",
-    "version": "1",
-    "omniname": "Destinare Search", 
-    "omnibox": {"keyword": "dt"},
-    "icons":  {
-        "16": "icon.png"
-      },
+  "name": "Destinare Lite",
+  "description": "An extension that gives you a plethora of things to do for a specified destination!",
+  "version": "1",
+  "omniname": "Destinare Search",
+  "omnibox": { "keyword": "dt" },
+  "icons": {
+    "16": "destinare.png"
+  },
 
-    "manifest_version": 2,
-    "background": {
-        "scripts": ["popup.js"]
-    },
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["popup.js"]
+  },
 
-    "content_scripts": [
-        {
-            "matches": ["https://www.airbnb.com/*"],
-            "js": ["popup.js"]
-        }
-    ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.airbnb.com/*"],
+      "js": ["popup.js"]
+    }
+  ],
 
-    "browser_action": {
-        "default_popup": "popup.html"
-    },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
 
-    "permissions": [
-     "tabs"
-     ]
-
+  "permissions": ["tabs"]
 }
