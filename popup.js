@@ -7,9 +7,9 @@ newButton.addEventListener('click', () => {
     chrome.tabs.create({url: url});
 })
 
+
+console.log('outside');
 chrome.omnibox.onInputEntered.addListener(function(text) {
-    chrome.omnibox.setDefaultSuggestion({suggestion: DefaultSuggestResult});
-    var newURL = `https://www.google.com/search?q=${text}`;
+    var newURL = `https:/localhost:3000/${text}`;
     chrome.tabs.create({ url: newURL });
   });
-  
