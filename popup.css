@@ -1,0 +1,22 @@
+body {
+  --glaucous: #6279b8ff;
+  --independence: #49516fff;
+  --isabelline: #eee5e5ff;
+}
+
+body,
+button {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+body {
+  background-color: var(--isabelline);
+}
+
+h1 {
+  color: var(--independence);
+}
+
+button {
+  background-color: var(--glaucous);
+}
